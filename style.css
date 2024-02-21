@@ -2,6 +2,8 @@ body{
     background-image: url('img/back.jpeg');
     background-position-y:50%;
     background-attachment: fixed; /* Fondo estático */
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -2;
 }
 body::after
