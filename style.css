@@ -309,7 +309,7 @@ flex-basis: 200;
         margin-left: -10%;
         margin-top: -15px;
         height: 35px;
-        width: 100%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
+        width: 90%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
         border-radius: 9%;
         background-color: #6815ac;
         
@@ -328,6 +328,39 @@ flex-basis: 200;
         text-decoration: none; /* Elimina el subrayado */
         transition: ease-in-out 0.5s;
     }
+
+    .Contacto {
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: rgb(109, 30, 236);
+        padding: 0.5em 1em;
+        outline: none;
+        border: none;
+        margin-right: -50px;
+        background-color: #8fc512;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 9px;
+      }
+      
+      .Contacto::after {
+        content: '';
+        z-index: -1;
+        background-color: hsla(0, 0%, 100%, 0.2);
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        width: 1.25em;
+        transform: translate3d(-525%, 0, 0) rotate(35deg);
+      }
+      
+      .Contacto:hover::after {
+        transition: transform 0.45s ease-in-out;
+        transform: translate3d(200%, 0, 0) rotate(35deg);
+      }
+      
   }
 
   
