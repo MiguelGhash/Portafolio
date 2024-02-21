@@ -280,7 +280,7 @@ flex-basis: 200;
     align-items: center;
     text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .git {
         position:fixed;
         background-image: url(img/Github.png);
@@ -307,7 +307,8 @@ flex-basis: 200;
         margin-left: -10%;
         margin-top: -15px;
         height: 35px;
-        width: 80%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
+        width: 100%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
+        border-radius: 9%;
         background-color: #6815ac;
         
     }
