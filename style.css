@@ -296,24 +296,38 @@ flex-basis: 200;
         margin-left: -5%;
         z-index: 2;
     }
-    .menu {
-    
-        background-color: #6815ac;
-        color: white;
-        
-    }
+  
     
     nav  {
         position: fixed;
         display: flex;
-        margin-left: -10%;
+        margin-left: -100px;
         margin-top: -15px;
         height: 35px;
-        width: 90%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
-        border-radius: 9%;
+        width: 100%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
+        border-radius: 9px;
         background-color: #6815ac;
-        
+        z-index: 2;
+        position: relative; /* Añadido para posicionar correctamente el botón de contacto */
     }
+    
+    .Contacto {
+        z-index: 1;
+        position: absolute; /* Cambiado a posición absoluta */
+        top: 0; /* Alineado con la parte superior del nav */
+        right: 0; /* Alineado con el borde derecho del nav */
+        font-size: inherit;
+        font-family: inherit;
+        color: rgb(109, 30, 236);
+        padding: 0.5em 1em;
+        outline: none;
+        border: none;
+        background-color: #8fc512;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 9px;
+    }
+    
    
     nav a, .Menunav  {
         color: white;
@@ -329,21 +343,6 @@ flex-basis: 200;
         transition: ease-in-out 0.5s;
     }
 
-    .Contacto {
-        z-index: 1;
-        position: relative;
-        font-size: inherit;
-        font-family: inherit;
-        color: rgb(109, 30, 236);
-        padding: 0.5em 1em;
-        outline: none;
-        border: none;
-        margin-right: -50px;
-        background-color: #8fc512;
-        overflow: hidden;
-        cursor: pointer;
-        border-radius: 9px;
-      }
       
       .Contacto::after {
         content: '';
