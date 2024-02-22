@@ -8,3 +8,5 @@ function toggleSkills(numero) {
       desplegable.style.maxHeight = "0";
     }
   }
+
+  document.getElementById("year").innerHTML = new Date().getFullYear();
