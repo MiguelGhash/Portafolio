@@ -375,6 +375,30 @@ footer{
       }
 
 @media (max-width: 1000px) {
+ 
+  
+  .welcome img{
+  margin-top: 100px;
+    
+}
+.inicio{
+  margin-top: 0px;
+
+    
+}
+
+.boxleft{
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 200;
+  
+  
+    
+  }
     .git {
         position:fixed;
         background-image: url(img/Github.png);
