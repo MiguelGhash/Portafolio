@@ -328,6 +328,7 @@ flex-basis: 200;
         overflow: hidden;
         cursor: pointer;
         border-radius: 9px;
+        width: 100px;
       }
       
       
