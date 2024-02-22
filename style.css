@@ -308,7 +308,7 @@ flex-basis: 200;
         margin-left: -70px;
         margin-top: -15px;
         height: 35px;
-        width: 100%;
+        width: 103%;
         border-radius: 9px;
         background-color: #6815ac;
         z-index: 2;
@@ -328,7 +328,7 @@ flex-basis: 200;
         overflow: hidden;
         cursor: pointer;
         border-radius: 9px;
-        width: 100px;
+        width: 90px;
       }
       
       
