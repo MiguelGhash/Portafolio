@@ -1,3 +1,5 @@
+
+
 body{
     background-image: url('img/back.jpeg');
     background-position-y:50%;
@@ -32,6 +34,8 @@ body::after
     color: white;
     width: 200%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
 }
+
+
 
 nav  {
     display: flex;
@@ -298,24 +302,22 @@ flex-basis: 200;
     }
   
     
-    nav  {
+    nav {
         position: fixed;
         display: flex;
-        margin-left: -100px;
+        margin-left: -70px;
         margin-top: -15px;
         height: 35px;
-        width: 100%; /* Utilizamos el 100% para ocupar todo el ancho de la pantalla */
+        width: 100%;
         border-radius: 9px;
         background-color: #6815ac;
         z-index: 2;
-        position: relative; /* Añadido para posicionar correctamente el botón de contacto */
-    }
-    
-    .Contacto {
+      }
+      
+      .Contacto {
+        position: absolute;
+        right: 0; /* Posiciona el borde derecho del botón a la derecha del nav */
         z-index: 1;
-        position: absolute; /* Cambiado a posición absoluta */
-        top: 0; /* Alineado con la parte superior del nav */
-        right: 0; /* Alineado con el borde derecho del nav */
         font-size: inherit;
         font-family: inherit;
         color: rgb(109, 30, 236);
@@ -326,19 +328,19 @@ flex-basis: 200;
         overflow: hidden;
         cursor: pointer;
         border-radius: 9px;
-    }
+      }
+      
+      
+
+      
+
     
-   
-    nav a, .Menunav  {
-        color: white;
-        margin: 0 3%; /* Agrega espacio entre los elementos de la navegación si lo deseas */
-        text-decoration: none; /* Elimina el subrayado */
-    }
+  
     
     
     .Menunav:hover{
         color: #9b69c4;
-        margin: 0 2%; /* Agrega espacio entre los elementos de la navegación si lo deseas */
+       
         text-decoration: none; /* Elimina el subrayado */
         transition: ease-in-out 0.5s;
     }
