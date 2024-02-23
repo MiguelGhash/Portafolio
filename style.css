@@ -408,7 +408,7 @@ footer{
         height: 70px;
         width: 70px;
         box-shadow: 0 0 20px black;
-        margin-top: 90%;
+        margin-top: 110%;
         margin-left: -5%;
         z-index: 2;
     }
@@ -478,20 +478,27 @@ footer{
 
       footer{
     margin-top: 20px;
-        padding: 5%;
+        padding: 2%;
         background-color: black;
         color: white;
         margin-bottom: -10px;
         align-items: center;
         justify-items: center;
     }
+
+    footer h1{
+      font-size: 1.2em;
+      font-family:sans-serif ;
+      margin: 0 20% ;
+      text-align: center;
+    }
     .Footer1{
       margin: 0 18%;
     }
-
+     
 
     .FooterLogo{
-      max-width: 80px;
+      max-width: 50px;
       max-height: auto;
       margin: 0 10%;
       margin-top: 20%;
