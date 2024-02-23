@@ -311,6 +311,16 @@ footer{
       flex-direction: row;
       flex-wrap: wrap;
     }
+    .MenuFooter2 {
+      display: flex;
+      flex-direction: row;
+      margin: 0 30%;
+    }
+    .MenuFooter2 p {
+      margin: 0 20px;
+    }
+
+    
     .RowFooter{
       display: flex; /* Añadido para activar flexbox */
       flex-direction: column; /* Para alinear los elementos en columna */
@@ -322,10 +332,11 @@ footer{
   
     }
     .MenuFooter{
-    
+      border-top: 3px solid white;
+      padding: 2%;
       justify-content: center;
       align-items: center;
-      margin: 0 30%;
+      margin: 0 27%;
     }
     .SocialLogo {
       width: 24px; /* Establece el ancho del icono */
@@ -420,7 +431,7 @@ footer{
         margin-left: -70px;
         margin-top: -15px;
         height: 35px;
-        width: 101.5vw;
+        width: 104vw;
         border-radius: 9px;
         background-color: #6815ac;
         z-index: 2;
@@ -493,22 +504,33 @@ footer{
       text-align: center;
     }
     .Footer1{
-      margin: 0 18%;
+      padding: 5%;
     }
      
+  
+  .MenuFooter2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1%;
+  }
+  .MenuFooter2 p {
+    margin: 0 6px;
+  }
 
     .FooterLogo{
-      max-width: 50px;
+      max-width: 100px;
       max-height: auto;
-      margin: 0 10%;
+   
+     
       margin-top: 20%;
     }
 
-    .MenuFooter
+    .MenuFooter, .MenuFooter2
     {
       border-top: 3px solid white;
       margin: 0 10%;
     }
+    
     .FooterOptions{
       
       margin: 0  0;
