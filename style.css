@@ -489,10 +489,18 @@ footer{
       margin: 0 18%;
     }
 
+
+    .FooterLogo{
+      max-width: 80px;
+      max-height: auto;
+      margin: 0 10%;
+      margin-top: 20%;
+    }
+
     .MenuFooter
     {
       border-top: 3px solid white;
-      margin: 0 12%;
+      margin: 0 10%;
     }
     .FooterOptions{
       
