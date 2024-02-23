@@ -388,8 +388,8 @@ footer{
 }
 
 .boxleft{
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -489,6 +489,15 @@ footer{
       margin: 0 18%;
     }
 
+    .MenuFooter
+    {
+      border-top: 3px solid white;
+      margin: 0 15%;
+    }
+    .FooterOptions{
+      
+      margin: 0  0;
+    }
       .FooterOptions a{
         color: white;
         text-decoration: none;
