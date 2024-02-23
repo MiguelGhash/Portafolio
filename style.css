@@ -476,6 +476,9 @@ footer{
 
 @media (max-width: 1000px) {
  
+  .yoCard2{
+    margin-top: -10px;
+  }
   
   .welcome img{
   margin-top: 100px;
