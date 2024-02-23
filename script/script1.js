@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
+        rect.top >= -1000 &&
+        rect.left >= -1000 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
@@ -62,7 +62,7 @@ window.addEventListener('scroll', function() {
 
 // Función para restablecer la opacidad cuando el elemento ya no está visible
 function resetOpacityOnScroll() {
-  var elementsToCheck = document.querySelectorAll('.yoCard1, .yoCard2, .welcome, .inicio, .titleSkills, .SkillCards');
+  var elementsToCheck = document.querySelectorAll('.yoCard1, .yoCard2, .welcome, .inicio');
 
   elementsToCheck.forEach(function(element) {
       if (!isElementInViewport(element)) {
