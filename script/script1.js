@@ -91,3 +91,41 @@ var botonMus = document.getElementById("music-btn");
 botonMus.addEventListener("click", function() {
   alert("Al presionar este botón se  mostrará una muestra de mis proyectos musicales. ¡Aún trabajo en esta parte!  ");
 });
+
+
+
+
+
+/*Boton flotante*/ 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const floatingButton = document.getElementById('git');
+
+  // Variables para almacenar la posición inicial del botón flotante
+  let initialX;
+  let initialY;
+  let currentX = 0;
+  let currentY = 0;
+
+  // Evento que se activa cuando se presiona el botón flotante
+  floatingButton.addEventListener('touchstart', (e) => {
+      // Obtener la posición inicial del toque
+      initialX = e.touches[0].clientX - currentX;
+      initialY = e.touches[0].clientY - currentY;
+  });
+
+  // Evento que se activa cuando se mueve el toque
+  floatingButton.addEventListener('touchmove', (e) => {
+      // Evitar el comportamiento predeterminado del desplazamiento de la página
+      e.preventDefault();
+
+      // Calcular la nueva posición del botón flotante
+      currentX = e.touches[0].clientX - initialX;
+      currentY = e.touches[0].clientY - initialY;
+
+      // Establecer la nueva posición del botón flotante
+      floatingButton.style.left = currentX + 'px';
+      floatingButton.style.top = currentY + 'px';
+  });
+});
+
