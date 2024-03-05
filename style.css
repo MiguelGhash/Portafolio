@@ -593,7 +593,7 @@ footer{
         z-index: 2;
     }
   
-    /*Este mensaje prueba que se hicieron cambios*/
+
     .MenuInicio {
         position: fixed;
         display: flex;
@@ -620,7 +620,7 @@ footer{
         overflow: hidden;
         cursor: pointer;
         border-radius: 9px;
-        width: 90px;
+        width: 100px;
       }
       
       
