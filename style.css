@@ -616,7 +616,8 @@ footer{
       
       .Contacto {
         position: absolute;
-        right: 0; /* Posiciona el borde derecho del botón a la derecha del nav */
+        right: 10px; /* Posiciona el borde derecho del botón a la derecha del nav */
+   
         z-index: 1;
         font-size: inherit;
         font-family: inherit;
