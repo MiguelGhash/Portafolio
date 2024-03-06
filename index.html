@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/MiguelLogo.png" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+    
 
     <title>Miguel Dev </title>
 </head>
@@ -26,9 +32,9 @@
       
      <!--------Zona 2 -------->
     <div class="welcome">
-        <img src="img/MiguelLogo.png"> 
-        <h2>BIENVENIDO</h2>
-        <h3>VIAJERO</h3>
+        <img class="animate__animated animate__wobble" src="img/MiguelLogo.png"> 
+        <h2 class="animate__animated animate__bounce" >BIENVENIDO</h2>
+        <h3 class ="animate__animated animate__backInLeft">VIAJERO</h3>
         
     </div>
 
@@ -59,7 +65,7 @@
 <path fill="#6815ac" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,213.3C384,192,480,160,576,138.7C672,117,768,107,864,96C960,85,1056,75,1152,101.3C1248,128,1344,192,1392,224L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 <div class="yo" id = "yo">
    
-    <div class="yoCard1">
+    <div class="yoCard1" data-av-animation="slideInRight">
         <p>¡Hola, viajero! mi nombre es Miguel, actualmente soy estudiante de ingeniería 
             de software y desarrollador frontend, siempre estoy con ganas de aprender.</p>
             <p>Ah, también soy profesor de música, músico y compositor con más de 10 años de experiencia
@@ -67,9 +73,8 @@
                 por mi pequeño universo.
             </p>
         <p>¡Disfruta tu estadía!</p>
-     
-    
     </div>
+    
     <div class="yoCard2">
         <img src="img/Photo.webp">
     </div>
@@ -89,6 +94,7 @@
         <button class="mas" onclick="toggleSkills(1)">
             +
         </button>
+     
         <div id="skills1" class="skill">
             <li>React</li>
             <li>Javascript
@@ -148,6 +154,9 @@
        
     </div>
 </div>
+
+
+
     <!--Fin tarjetas --> 
 </div>
 
@@ -249,5 +258,9 @@
 </body>
 
 <script src="script/script1.js"></script>
+
+
+
+
 
 </html>

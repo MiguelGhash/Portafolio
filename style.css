@@ -229,6 +229,14 @@ menu.loaded{
   
 }
 
+.animate__animated.animate__bounce, .animate__animated.animate__wobble ,  .animate__animated.animate__backInLeft{
+  --animate-duration: 3s;
+}
+
+
+
+
+
 .yoCard1, .yoCard2{
   width: 300px;
   flex-grow: 1;

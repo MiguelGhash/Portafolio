@@ -1,3 +1,4 @@
+
 function toggleSkills(numero) {
     const desplegable = document.getElementById("skills" + numero);
     if (desplegable.style.maxHeight === "0px" || !desplegable.style.maxHeight) {
@@ -8,7 +9,6 @@ function toggleSkills(numero) {
       desplegable.style.maxHeight = "0";
     }
   }
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -35,14 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
-        rect.top >= -1000 &&
-        rect.left >= -1000 &&
+        rect.top >= -500 &&
+        rect.left >= -500 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 
-// Función para activar el efecto de fade-in cuando el usuario hace scroll
+
+/// Función para activar el efecto de fade-in cuando el usuario hace scroll
 function fadeInOnScroll() {
     var elementsToFadeIn = document.querySelectorAll('.yoCard1, .yoCard2, .welcome, .inicio, .titleSkills, .SkillCards');
   
@@ -128,4 +129,5 @@ document.addEventListener("DOMContentLoaded", function() {
       floatingButton.style.top = currentY + 'px';
   });
 });
+
 
