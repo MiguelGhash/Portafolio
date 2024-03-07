@@ -61,6 +61,7 @@ window.addEventListener('scroll', function() {
     fadeInOnScroll();
 });
 
+/*
 // Función para restablecer la opacidad cuando el elemento ya no está visible
 function resetOpacityOnScroll() {
   var elementsToCheck = document.querySelectorAll('.yoCard1, .yoCard2, .welcome, .inicio');
@@ -71,7 +72,7 @@ function resetOpacityOnScroll() {
       }
   });
 }
-
+*/
 // Agregar un event listener para detectar el scroll
 window.addEventListener('scroll', function() {
   resetOpacityOnScroll();
@@ -131,3 +132,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Función para verificar si un elemento está visible en la pantalla y agregar la clase ".x" si está visible
+function ElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  var isVisible =
+      rect.top >= -500 &&
+      rect.left >= -500 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+
+  if (isVisible) {
+      el.classList.add("animate__animated animate__wobble");
+  } else {
+      el.classList.remove("animate__animated animate__wobble");
+  }
+
+  return isVisible;
+}
+
+// Función para aplicar la animación al elemento .yoCard1
+function animateYoCardOnScroll() {
+  var yoCard1Elements = document.querySelectorAll('.yoCard1, .yoCard2');
+
+  yoCard1Elements.forEach(function(element) {
+      if (isElementInViewport(element) && element.classList.contains('loaded')) {
+          element.classList.add('animate__animated', 'animate__backInDown');
+      }
+  });
+}
+
+// Agregar un event listener para detectar el scroll y activar la animación
+window.addEventListener('scroll', function() {
+  animateYoCardOnScroll();
+});
+
+
+// Función para aplicar la animación al elemento .yoCard1
+function animatetitleSkillsOnScroll() {
+  var yoCard1Elements = document.querySelectorAll('.titleSkills');
+
+  yoCard1Elements.forEach(function(element) {
+      if (isElementInViewport(element) && element.classList.contains('loaded')) {
+          element.classList.add('animate__animated', 'animate__tada');
+      }
+  });
+}
+
+window.addEventListener('scroll', function() {
+  animatetitleSkillsOnScroll() ;
+});
